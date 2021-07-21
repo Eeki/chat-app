@@ -1,0 +1,31 @@
+{
+  "name": "chat-app-server",
+  "version": "1.0.0",
+  "description": "Real-time chat app's server.",
+  "scripts": {
+    "dev": "./dev-server.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eeki/chat-app.git"
+  },
+  "keywords": [
+    "PostGraphile",
+    "AWS"
+  ],
+  "author": "eliel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eeki/chat-app/issues"
+  },
+  "homepage": "https://github.com/Eeki/chat-app#readme",
+  "dependencies": {
+    "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+    "db-migrate": "^0.11.12",
+    "db-migrate-pg": "^1.2.2",
+    "dotenv": "^5.0.1",
+    "postgraphile": "^4.12.3",
+    "postgraphile-plugin-connection-filter": "^2.2.1"
+  }
+}
