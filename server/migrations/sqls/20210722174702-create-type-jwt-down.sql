@@ -1,0 +1,1 @@
+DROP TYPE chat.jwt;

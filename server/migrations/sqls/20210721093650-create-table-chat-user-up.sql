@@ -1,9 +1,10 @@
-CREATE TABLE chat.chat_user
+CREATE TABLE chat.chat_person
 (
-    chat_id  integer REFERENCES chat.chat (id) NOT NULL,
-    user_id  integer REFERENCES chat.user (id) NOT NULL,
-    is_admin boolean                           NOT NULL,
-    PRIMARY KEY (chat_id, user_id)
+    chat_id   integer REFERENCES chat.chat (id)   NOT NULL,
+    person_id integer REFERENCES chat.person (id) NOT NULL,
+    is_admin  boolean                             NOT NULL,
+    PRIMARY KEY (chat_id, person_id)
 );
 
-CREATE INDEX message_chat_user_user_idx ON chat.chat_user (user_id);
+CREATE INDEX message_chat_person_person_idx ON chat.chat_person (person_id);
+CREATE INDEX message_chat_person_chat_idx ON chat.chat_person (chat_id);

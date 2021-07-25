@@ -1,1 +1,1 @@
-DROP TABLE chat.chat_user;
+DROP TABLE chat.chat_person;
